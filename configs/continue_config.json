@@ -1,16 +1,22 @@
 {
   "models": [
     {
-      "title": "ApexMistral-22B (Codestral Production Coder)",
+      "title": "ApexMistral-Coder-22B (Production Multi-Language Coder)",
       "provider": "ollama",
-      "model": "apex-mistral-22b",
+      "model": "apex-mistral-coder-22b",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "ApexMistral-Think-22B (Deep Architecture & Reasoning)",
+      "provider": "ollama",
+      "model": "apex-mistral-think-22b",
       "apiBase": "http://localhost:11434"
     }
   ],
   "tabAutocompleteModel": {
-    "title": "ApexMistral-22B Native FIM Autocomplete",
+    "title": "ApexMistral-Coder-22B FIM Autocomplete",
     "provider": "ollama",
-    "model": "apex-mistral-22b",
+    "model": "apex-mistral-coder-22b",
     "apiBase": "http://localhost:11434"
   }
 }

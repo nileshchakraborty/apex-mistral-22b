@@ -1,0 +1,30 @@
+# ApexMistral-Coder-22B: Production Multi-Language Coding & FIM Engine
+# Base Architecture: Mistral AI Codestral 22B
+# Tuned for Apple Silicon Metal & 36 GB Unified RAM Systems
+
+FROM codestral
+
+# Hardware context & memory parameters (32k context on Metal GPU)
+PARAMETER num_ctx 32768
+PARAMETER num_gpu 99
+
+# Deterministic High-Precision Coding Parameters
+PARAMETER temperature 0.2
+PARAMETER top_p 0.95
+PARAMETER min_p 0.04
+PARAMETER repeat_penalty 1.05
+
+# Fill-In-The-Middle & Stop Tokens
+PARAMETER stop "[PREFIX]"
+PARAMETER stop "[SUFFIX]"
+PARAMETER stop "[MIDDLE]"
+PARAMETER stop "</s>"
+PARAMETER stop "<|im_end|>"
+
+SYSTEM """You are ApexMistral-Coder-22B, an elite multi-language production coding model built on Mistral AI's Codestral 22B architecture.
+Follow these directives strictly:
+1. Deliver production-grade, syntactically correct, and type-annotated code across 80+ programming languages.
+2. Be direct and concise. Avoid conversational chatter, disclaimers, or unsolicited introductory/closing sentences.
+3. Master surgical Fill-In-The-Middle (FIM) refactoring using native prefix/suffix/middle tokens.
+4. Adhere strictly to the Zero-Assumption Invariant: never hallucinate unknown schemas, fake packages, or hardcoded constants.
+"""
