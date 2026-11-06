@@ -1,0 +1,29 @@
+{
+  "default_profile": "production_coding",
+  "profiles": {
+    "production_coding": {
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "min_p": 0.04,
+      "repeat_penalty": 1.05,
+      "num_ctx": 32768,
+      "description": "Deterministic, typed, production code synthesis across Python, Rust, Go, TypeScript, C++, Swift, Java."
+    },
+    "fim_autocomplete": {
+      "temperature": 0.1,
+      "top_p": 0.90,
+      "min_p": 0.05,
+      "repeat_penalty": 1.02,
+      "num_ctx": 16384,
+      "description": "Ultra-fast Fill-In-The-Middle in-editor tab autocomplete with zero latency overhead."
+    },
+    "refactoring_diff": {
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "min_p": 0.04,
+      "repeat_penalty": 1.05,
+      "num_ctx": 32768,
+      "description": "Surgical search/replace unified diff generation."
+    }
+  }
+}

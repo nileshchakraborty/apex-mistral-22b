@@ -1,0 +1,16 @@
+{
+  "models": [
+    {
+      "title": "ApexMistral-22B (Codestral Production Coder)",
+      "provider": "ollama",
+      "model": "apex-mistral-22b",
+      "apiBase": "http://localhost:11434"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "ApexMistral-22B Native FIM Autocomplete",
+    "provider": "ollama",
+    "model": "apex-mistral-22b",
+    "apiBase": "http://localhost:11434"
+  }
+}
